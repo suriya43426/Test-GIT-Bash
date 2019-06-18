@@ -8,16 +8,20 @@
     <title>Clip1</title>
 </head>
 <body>
-    <div id="vue-app2">
-        <button type="button" v-on:click="like=!like">Like</button> 
-        <h1 v-if="like">สวัสดี</h1>
+    <div id="vue-app">
+    <span>ชื่อพนักงาน</span>
+    <input v-model="newData.empName">
+    <span>เงินเดือน</span>
+    <input v-model="newData.salary">
+    <br><br>
+    <button @click="addEmp">บันทึกข้อมูล</button>
+    <br>
     <ul>
-        <li v-for="result in product">{{result}}</li>
-    </ul>
-    <ul>
-        <li v-for="emp in employee">{{emp.name}}|{{emp.age}}</li>
+      <li v-for="emp in empGroup">
+        {{emp.empName}}ได้เงินเดือน{{emp.salary}}
+      </li>
     </ul>
     </div>
-    <script src="app2.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
