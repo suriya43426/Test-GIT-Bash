@@ -1,6 +1,6 @@
 new Vue({
     el:"#vue-app",
-    Data:{
+    data:{
         newData:{
             empName:'',
             salary:0
