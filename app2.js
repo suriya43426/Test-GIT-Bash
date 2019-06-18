@@ -4,10 +4,11 @@ new Vue({
         name:"Suriya C",
         job:"engineer",
         age:0,
+        count:0,
         status:false,
         website: 'http://www.ksl-calc.com'
     },
-    method :{
+    methods :{
         getName:function(){
             return this.name
         },
@@ -21,6 +22,10 @@ new Vue({
         SubtractAge:function(){
             this.age--;
             console.log(this.age);
+        },
+        addCount:function(){
+            this.count++;
+            console.log(this.count);
         }
 
     }

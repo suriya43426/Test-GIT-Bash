@@ -13,11 +13,11 @@
         <h1>job : {{job}}</h1>
         <h1>age : {{age}}</h1>
         <h1>Website :<a v-bind:href="website">link</a></h1>
-        <input type="text" name="" v-bind:value="name">
-        <input type="text" name="" v-bind:value="job">
+        <input type="text" v-on:keyup="addCount">
+        <h1>Count:{{count}}</h1>
         <br><br>
-        <button type="button" v-on:click="addAge()">Add</button>
-        <button type="button" v-on:click="SubtractAge()">Subtract</button>
+        <button type="button" v-on:click="addAge">Add</button>
+        <button type="button" v-on:click="SubtractAge">Subtract</button>
     </div>
     <script src="app2.js"></script>
 </body>
