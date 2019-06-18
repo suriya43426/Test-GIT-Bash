@@ -1,24 +1,20 @@
 new Vue({
     el:"#vue-app",
-    data:{
-        name:"suriya Chayatummagoon",
-        job:"Software Engineer",
-        age:"32 Years",
-        status:"false",
-        website:'http://www.ksl-calc.com'
-    },
-    methods:{
-        getName:function(){
-            return this.name
+    Data:{
+        newData:{
+            empName:'',
+            salary:0
         },
-        setName:function(n){
-            return this.name=n
+        empGroup:[
+        {
+            empName:"สมพร",
+            salary:5000
         },
-        addAge:function(){
-
+        {
+            empName:"สมศรี",
+            salary:4000
         },
-        SubtractAge:function(){
-
-        }
+        ]
+        
     }
 })
