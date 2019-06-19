@@ -9,7 +9,8 @@ Vue.component('ohm',{
 });
 
 Vue.component('post', {
-    template:'<h3>New post</h3>'
+    props:['title'],
+    template:'<h3>{{title}}</h3>'
 })
 new Vue({
     el:"#vue-app"
