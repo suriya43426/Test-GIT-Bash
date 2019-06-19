@@ -9,12 +9,14 @@
 </head>
 <body>
     <div id="vue-app">
-    <post title="Suriya C"></post>
-    <post title="Yasinee"></post>
-    <post title="Ohm tutorial"></post>
-    <showview title="Java Suriya" v-bind:view=100></showview>
-    <showview title="Python Suriya" ></showview>
-    <showview title="photoshop" v-bind:view=500 ></showview>
+        
+        <ul>
+            <li v-for="comment in comments" 
+            is="showcomment"
+            v-bind:commentpost ="comment"
+            ></li>
+        </ul>
+        <input type="text" v-model="newComment" v-on:keyup.enter="addComment">
     </div>
     <script src="app.js"></script>
 </body>
